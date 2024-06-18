@@ -18,6 +18,12 @@ function App() {
           <div className='top-dashboard-display size-100 flex-c'>Hello</div>
           <div className='top-dashboard-display size-100 flex-c'>Hello</div>
         </div>
+        <div className='middle-dashboard'>
+          <div className='middle-dashboard-display size-100 flex-c'>Hello</div>
+          <div className='middle-dashboard-display size-100 flex-c'>Hello</div>
+          <div className='middle-dashboard-display size-100 flex-c'>Hello</div>
+          <div className='middle-dashboard-display size-100 flex-c'>Hello</div>
+        </div>
         <div className='bottom-dashboard'>
           <div className='bottom-dashboard-display size-100 flex-c'>Hello</div>
           <div className='bottom-dashboard-display size-100 flex-c'>Hello</div>
