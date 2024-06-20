@@ -99,6 +99,7 @@ html {
   display: grid;
   grid-template-columns: 33% 33% 34%;
   grid-gap: 5px;
+  /*border: 1px solid yellowgreen */
 }
 
 .top-dashboard-display, .bottom-dashboard-display, .middle-dashboard-display {
@@ -106,20 +107,28 @@ html {
   width: 95%;
   background-color: var(--icon-theme);
   margin: 20px;
+  margin-bottom: 0px;
   border-radius: 20px;
 }
 
+.top-dashboard-display {
+  width: 96%;
+  height: 90%;
+  transform: translateY(-0px);
+}
+
 .bottom-dashboard-display {
-  width: 97%;
+  width: 98%;
 }
 
 .middle-dashboard {
   grid-row: 2;
-  height: 95%;
+  height: 90%;
   width: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 5px;
+  transform: translateY(-5px);
 }
 
 .bottom-dashboard {
