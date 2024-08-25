@@ -1,6 +1,6 @@
 export function Home({size="40px", color="#000000"}) {
     return (
-        <svg fill={color} width={size} height={size} viewBox="-4.5 0 32 32">
+        <svg className="menu-icon" fill={color} width={size} height={size} viewBox="-4.5 0 32 32">
             <path d="M19.469 12.594l3.625 3.313c0.438 0.406 0.313 0.719-0.281 0.719h-2.719v8.656c0 0.594-0.5 1.125-1.094 1.125h-4.719v-6.063c0-0.594-0.531-1.125-1.125-1.125h-2.969c-0.594 0-1.125 0.531-1.125 1.125v6.063h-4.719c-0.594 0-1.125-0.531-1.125-1.125v-8.656h-2.688c-0.594 0-0.719-0.313-0.281-0.719l10.594-9.625c0.438-0.406 1.188-0.406 1.656 0l2.406 2.156v-1.719c0-0.594 0.531-1.125 1.125-1.125h2.344c0.594 0 1.094 0.531 1.094 1.125v5.875z"></path>
         </svg>
     )
@@ -8,7 +8,7 @@ export function Home({size="40px", color="#000000"}) {
 
 export function Classes({size="40px", color="#000000"}) {
     return (
-        <svg width={size} height={size} viewBox="0 0 32 32">
+        <svg className="menu-icon" width={size} height={size} viewBox="0 0 32 32">
             <path fill={color} d="M30,22v3c0,0.552-0.448,1-1,1h-1c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1v-7.539l-11.198-0.896
                 C16.621,12.822,16.337,13,16,13c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1c0.396,0,0.732,0.235,0.894,0.57l11.186,0.895
                 c0.516,0.041,0.92,0.479,0.92,0.997V21C29.552,21,30,21.448,30,22z M16,19.725c-0.547,0-1.094-0.111-1.603-0.334L8,16.592v2.227
@@ -23,9 +23,9 @@ export function Classes({size="40px", color="#000000"}) {
 
 export function Certificate({size="40px", color="#000000"}) {
     return (
-        <svg fill={color} width={size} height={size} viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet">
-            <path d="M19,30H4a2,2,0,0,1-2-2V8A2,2,0,0,1,4,6H32a2,2,0,0,1,2,2V18.37a8.34,8.34,0,0,0-13.49,9.79l-.93,1.14ZM7,12v1.6H24V12Zm0,5.6H18V16H7Zm0,7H17V23H7Z" class="clr-i-solid clr-i-solid-path-1"></path><path d="M33.83,23.59a6.37,6.37,0,1,0-10.77,4.59l-1.94,2.37.9,3.61,3.66-4.46a6.26,6.26,0,0,0,3.55,0l3.66,4.46.9-3.61-1.94-2.37A6.34,6.34,0,0,0,33.83,23.59Zm-10.74,0a4.37,4.37,0,1,1,4.37,4.31A4.35,4.35,0,0,1,23.1,23.59Z" class="clr-i-solid clr-i-solid-path-2"></path>
-            <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+        <svg className="menu-icon" fill={color} width={size} height={size} viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet">
+            <path d="M19,30H4a2,2,0,0,1-2-2V8A2,2,0,0,1,4,6H32a2,2,0,0,1,2,2V18.37a8.34,8.34,0,0,0-13.49,9.79l-.93,1.14ZM7,12v1.6H24V12Zm0,5.6H18V16H7Zm0,7H17V23H7Z" className="clr-i-solid clr-i-solid-path-1"></path><path d="M33.83,23.59a6.37,6.37,0,1,0-10.77,4.59l-1.94,2.37.9,3.61,3.66-4.46a6.26,6.26,0,0,0,3.55,0l3.66,4.46.9-3.61-1.94-2.37A6.34,6.34,0,0,0,33.83,23.59Zm-10.74,0a4.37,4.37,0,1,1,4.37,4.31A4.35,4.35,0,0,1,23.1,23.59Z" className="clr-i-solid clr-i-solid-path-2"></path>
+            <rect x="0" y="0" width="36" height="36" fillOpacity="0"/>
         </svg>
     )
 }
