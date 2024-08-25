@@ -1,14 +1,13 @@
-html {
+body, html {
   height: 100%;
-  max-height: 100%;
-  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
-  overflow-x: auto;
   --dark-theme: #2a4054;
   --med-theme: #EEEEEE;
   --med-light-theme: #F7F7F7;
@@ -17,8 +16,12 @@ html {
   --blue-theme: #3E64FF;
   --yellow-theme: #F6D365;
   --beige-theme: #E2E8CE;
-  background-color: var(--med-light-theme);
-  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* Define some utility classes to minimise repetitive css */
@@ -44,14 +47,23 @@ html {
   cursor: pointer;
 }
 
+.page-container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* Start formatting the main page */
 .wrapper {
-  max-height: 100%;
+  height: 90%;
+  width: 90%;
   display: grid;
   grid-template-columns: 15% 1fr;
   grid-template-rows: 75px 1fr;
-  overflow-y: none;
   -webkit-overflow-scrolling: touch; /* optional, for smoother scrolling on iOS devices */
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .main-header {
@@ -62,6 +74,7 @@ html {
   font-size: 22px;
   font-weight: bold;
   justify-content: space-between;
+  border-top-right-radius: 30px;
 }
 
 .main-menu {
@@ -72,6 +85,8 @@ html {
   justify-content: flex-start;
   overflow: hidden;
   margin-bottom: -20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 /* format the main area */
@@ -81,10 +96,9 @@ html {
   background: var(--med-light-theme);
   display: grid;
   grid-template-rows: 40% 20% 40%;
-  overflow-y: auto;
-  overflow-x: auto;
   min-width: 1100px;
   min-height: 700px;
+  overflow: hidden;
 }
 
 .top-dashboard {
