@@ -8,7 +8,8 @@ function App() {
   return (
     <div className='page-container flex-c'>
       <div className='wrapper'>
-        <div className='main-header size-100'></div>
+        <div className='icon-area flex-c'>MAIN MENU</div>
+        <div className='main-header size-100 flex-c'>HNECT Learning Centre</div>
         <Sidenav />
         <div className='main-area size-100'>
           <div className='top-dashboard'>

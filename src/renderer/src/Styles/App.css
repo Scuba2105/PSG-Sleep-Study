@@ -66,27 +66,49 @@ body, html {
   overflow: hidden;
 }
 
+.icon-area {
+  grid-row: 1;
+  grid-column: 1;
+  border-top-left-radius: 30px;
+  background: var(--dark-theme);
+  color: var(--med-light-theme);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 2.5vh;
+}
+
 .main-header {
   grid-row: 1 / span 1;
   grid-column: 2 / -1;
   background: var(--med-theme);
-  color: white;
+  color: var(--dark-theme);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 22px;
   font-weight: bold;
   justify-content: space-between;
-  border-top-right-radius: 30px;
 }
 
 .main-menu {
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
   grid-column: 1 / span 1;
   background: var(--dark-theme);
   width: 100%;
   justify-content: flex-start;
   overflow: hidden;
   margin-bottom: -20px;
-  border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+}
+
+.menu-option-container {
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.menu-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vh;
+  color: var(--med-light-theme);
+  margin-left: 10px;
 }
 
 /* format the main area */
