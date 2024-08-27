@@ -3,6 +3,12 @@ import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 
+function retrieveAppData() {
+  // Connect to the database and retrieve data
+  console.log("Hello from main process")
+  return JSON.stringify({key: "value"})
+}
+
 function createMainWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
@@ -51,8 +57,8 @@ app.whenReady().then(() => {
     optimizer.watchWindowShortcuts(window)
   })
 
-  // IPC test
-  ipcMain.on('ping', () => console.log('pong'))
+  // Set the event handler 
+  ipcMain.handle('data:retrieveData', retrieveAppData)
 
   createMainWindow()
 

@@ -4,10 +4,34 @@ import { HomePage } from './Components/Home Page/HomePage'
 import { LessonsPage } from './Components/Lessons Page/LessonsPage'
 import { CertificatesPage } from './Components/Certificates Page/CertificatesPage'
 import './Styles/App.css'
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query'
 
-function App() {
+const queryClient = new QueryClient()
+
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <MainApp />
+    </QueryClientProvider>
+  )
+}
+
+function MainApp() {
   const [menuOption, setMenuOption] = useState("Home")
 
+  const { isPending, error, data } = useQuery({
+    queryKey: ['appData'],
+    queryFn: async () => {
+      const appData = await window.electron.retrieveData();
+      return appData
+    }
+         
+  })
+
+  if (isPending) return 'Loading...'
+
+  if (error) return 'An error has occurred: ' + error.message
+  console.log(data)
   return (
     <div className='page-container flex-c'>
       <div className='wrapper'>
@@ -22,5 +46,4 @@ function App() {
   )
 }
 
-export default App
 
