@@ -30,7 +30,7 @@ function MainApp() {
   })
 
   if (isPending) return (
-    <LoadingPage />
+    <LoadingPage menuOption={menuOption} setMenuOption={setMenuOption} />
   )
 
   if (error) return 'An error has occurred: ' + error.message
