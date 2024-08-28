@@ -135,11 +135,11 @@ body, html {
 
 .menu-option-container:hover {
   cursor: pointer;
-  background-color: #3E64FF;
+  background-color: #6C91BF;
 }
 
 .menu-option-container-selected {
-  background-color: #3E64FF;
+  background-color: #6C91BF;
   justify-content: flex-start;
   padding-left: 10px;
 }
