@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { LoadingPage } from './Components/LoadingPage'
 import { Sidenav } from './Components/Sidenav'
 import { HomePage } from './Components/Home Page/HomePage'
 import { LessonsPage } from './Components/Lessons Page/LessonsPage'
@@ -28,10 +29,13 @@ function MainApp() {
          
   })
 
-  if (isPending) return 'Loading...'
+  if (isPending) return (
+    <LoadingPage />
+  )
 
   if (error) return 'An error has occurred: ' + error.message
   console.log(data)
+
   return (
     <div className='page-container flex-c'>
       <div className='wrapper'>

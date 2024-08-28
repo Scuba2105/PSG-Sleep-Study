@@ -7,7 +7,7 @@ function setOptionSelected(e, setMenuOption) {
 
 export function Sidenav({menuOption, setMenuOption}) {
   return (
-    <div className='main-menu size-100'>
+    <nav className='main-menu size-100'>
       <div className={menuOption === "Home" ? "menu-option-container-selected flex-c" : "menu-option-container flex-c"} onClick={(e) => setOptionSelected(e, setMenuOption)}>
         <Home color="#F7F7F7"/>
         <h4 className='menu-heading'>Home</h4>
@@ -20,6 +20,6 @@ export function Sidenav({menuOption, setMenuOption}) {
         <Certificate color="#F7F7F7"/>
         <h4 className='menu-heading'>Certificates</h4>
       </div>
-    </div>
+    </nav>
   )
 }
